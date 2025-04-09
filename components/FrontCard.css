@@ -1,0 +1,150 @@
+body{
+    height: 100vh;
+    position: relative;
+}
+.frontmain{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+   background-image: url('../assets/images/bg-card-front.png');
+   width: 447px;
+   height: 245px;
+    color: white;
+    object-fit: cover;
+    padding: 15px;
+}
+.circlecontainer{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.bigcircle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.smallcircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 15px;
+    width: 90%;
+}
+.cardNumber{
+    width: 100%;
+}
+.inputdetails{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+.personaldetails{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height: 25px;
+    padding: 3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.date{
+    width: 39%;
+    margin-right: 10px;
+}
+.last{
+    display: flex;
+    gap: 25px;
+    width: 200px;
+    align-items: center;
+}
+.cvv{
+    width: 60px;
+    height: 30px;
+}
+.confirm{
+    width: 90%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+.backmain{
+    position: absolute;
+    top: 50%;
+    left: 25%; 
+    background-image: url('../assets/images/bg-card-back.png');
+    width: 447px;
+    height: 245px;
+    color: #fff;
+}
+.cvvdetails{
+    text-align: end;
+    padding-right: 50px;
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+}
+.error {
+    color: red;
+    font-size: 12px;
+  }
+  .thankyou{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    
+  }
+
+  @media (max-width:768px){
+    body{
+        background-image: url('../assets/images/bg-main-mobile.png');
+        width: 100vw;
+    }
+    .frontmain{
+        width: 300px;
+        height: 180px;
+        top: 20%;
+        left: 8%;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .backmain{
+        width: 300px;
+        height: 180px;
+        left: 15%;
+        top: 3%;
+        border-radius: 10px;
+    }
+    .inputdetails{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translateY(-30%);
+        margin-right: 0;
+        
+    }
+    .cvvdetails {
+        text-align: end;
+        padding-right: 16px;
+        position: relative;
+        top: 65%;
+    }
+    .thankyou{
+        position: absolute;
+        right: 20%;
+        top: 45%;
+        
+      }
+  }

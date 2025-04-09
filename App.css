@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree";
+    font-weight: 500;
+
+}
+body{
+    background-image: url('./assets/images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+}
