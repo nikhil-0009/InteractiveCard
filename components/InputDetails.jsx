@@ -40,7 +40,7 @@ import { Thankyou } from './Thankyou'
   return Submitted ? (<Thankyou />):(<div className='inputdetails'>
             <form onSubmit={handleSubmit}>
               <div className='name'>
-                <label htmlFor='cardHolderName'>Cardholder Name</label><br />
+                <label htmlFor='cardHolderName'>CardHolder Name</label><br />
                 <input
                   type='text'
                   id='cardHolderName'
