@@ -1,6 +1,8 @@
 body{
     height: 100vh;
     position: relative;
+    background-image: url('../assets/images/bg-main-desktop.png');
+    background-repeat: no-repeat;
 }
 .frontmain{
     position: absolute;
